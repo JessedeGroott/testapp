@@ -2,7 +2,15 @@
 
 <manifest 
     xmlns:android="http://schemas.android.com/apk/res/android" 
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.testapp">
+    
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="34" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    
     <application 
         android:allowBackup="true" 
         android:icon="@mipmap/ic_launcher" 
@@ -11,7 +19,7 @@
         android:supportsRtl="true" 
         android:theme="@style/AppTheme">
         <activity 
-            android:name="MainActivity" 
+            android:name=".MainActivity" 
             android:exported="true">
             <intent-filter>
                 <action 
